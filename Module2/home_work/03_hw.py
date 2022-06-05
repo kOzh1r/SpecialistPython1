@@ -31,3 +31,8 @@
 # 20 199.8 Rub.
 
 # TODO: your code here
+price = float(input("Введите стоимость товара: "))
+amount = 1
+while amount <= 20:
+    print(amount, price * amount, "Rub.")
+    amount = amount + 1
