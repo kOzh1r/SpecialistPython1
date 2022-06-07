@@ -10,3 +10,10 @@
 # 1234
 
 # TODO: your code here
+n = int(input("Введите количество ступенек: "))
+number = 1
+storage = ""
+while number <= n:
+    storage = str(storage) + str(number)
+    print(str(storage))
+    number +=1
