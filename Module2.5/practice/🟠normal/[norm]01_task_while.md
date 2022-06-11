@@ -32,7 +32,11 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число: "))
+stop = 1
+while stop <= n:
+    print("*" * stop)
+    stop += 1
 ```
 
 ---
