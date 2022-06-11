@@ -16,7 +16,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = input("Введите число: ")
+total = 0
+
+while n != "стоп":
+    if int(n) > 0:
+        total += int(n)
+    n = input("Введите число: ")
+print(total)
 ```
 
 ---
