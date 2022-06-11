@@ -22,7 +22,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число: "))
+i = 1
+s = "1"
+while n >= i:
+    print(s)
+    i += 1
+    s = s + str(i)
 ```
 
 ---
