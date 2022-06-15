@@ -36,6 +36,10 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+price = float(input("Введите стоимость товара: "))
+amount = 1
+while amount <= 20:
+    print(amount, price * amount, "Rub.")
+    amount = amount + 1   
 ```
 
