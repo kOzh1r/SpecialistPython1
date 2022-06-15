@@ -5,3 +5,15 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import random
+
+numbers = []
+new_numbers = []
+n = int(input("Введите число: "))
+for i in range(n):
+    numbers.append(random.randint(-100, 100))
+print("Дано: ", numbers)
+for i in numbers:
+    if i > 0 and (i ** 0.5) % 1 == 0:
+        new_numbers.append(int(i ** 0.5))
+print("Результат: ", new_numbers)
