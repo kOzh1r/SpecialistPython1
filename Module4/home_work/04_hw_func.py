@@ -9,6 +9,23 @@
 # Ввод: -2/3 - -2
 # Вывод: 1 1/3
 
-# TODO: your code here
+def fractions(stroka):
+    stroka = round(eval(stroka.replace(" ", "+")), 5)
+    x = 0
+    y = 2
 
+    while round(x / y, 5) != abs(stroka):
+        y = 2
+        x += 1
+        while round(x / y, 5) != abs(stroka) and round(x / y, 5) > abs(stroka):
+            y += 1
 
+    if x // y == 0:
+        n = ''
+    else:
+        n = x // y
+
+    if stroka < 0:
+        return print(f'-{n} {x % y}/{y}')
+    else:
+        return print(f'{n} {x % y}/{y}')
