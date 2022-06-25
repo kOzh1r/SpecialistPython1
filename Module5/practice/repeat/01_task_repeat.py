@@ -3,5 +3,10 @@
 # , где size - размер генерируемого списка c элементами в диапазоне от of до to.
 
 def gen_list(size, of, to):
-    pass
-
+    my_list = []
+    len_list = 0
+    if len_list <= size:
+        for i in range(of, to):
+            my_list.append(i)
+            len_list += 1
+    return my_list
