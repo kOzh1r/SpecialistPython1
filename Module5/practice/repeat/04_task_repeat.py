@@ -6,5 +6,8 @@
 # веб-странице и вывода списка остальных страниц.
 
 def pagination(num_items, items_on_page):
-    pass
+    return int(num_items / items_on_page)
 
+a = int(input("введите количество объектов: "))
+b = int(input("введите количество объектов на странице: "))
+print(f'Всего страниц с товарами: {pagination(a, b)}')
