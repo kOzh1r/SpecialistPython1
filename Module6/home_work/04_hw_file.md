@@ -22,7 +22,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+with open('fruits.txt', 'r', encoding='UTF-8') as f:
+    for fruit in f:
+        if fruit != '\n':
+            with open(f'Fruits_{fruit[0]}', 'a', encoding='UTF-8') as w:
+                w.write(fruit)
 ```
 
 ---
