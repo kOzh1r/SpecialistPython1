@@ -16,6 +16,10 @@
 
 ```python
 def log(text, file="log.txt"):
+    with open(file, 'a', encoding='utf-8') as f:
+        f.write('\n')
+        f.write(text)
+
     ...
 
 log("hello world")  # дописывает "hello world" в конец файла log.txt
