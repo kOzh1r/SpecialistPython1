@@ -34,8 +34,12 @@ n = 6
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
-# TODO: you code here...
+n = int(input('n: '))
+count = 1
+with open('pyramid.txt', 'a', encoding='UTF8') as f:
+    for i in range(n):
+        f.write(f"{'*' * count:^{n * 2}}\n")
+        count += 2
 ```
 
 ---
