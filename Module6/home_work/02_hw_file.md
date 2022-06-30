@@ -16,9 +16,18 @@
 ### Решение задачи
 
 ```python
+with open("info.txt", "r") as f:
+    list_str = []
+    for line in f:
+        list_str.append(line.strip())
+
 summa = 0
-with open("data/info.txt", "r") as f:
-    pass
+for line in list_str:
+    try:
+        summa += int(line)
+    except ValueError:
+        pass
+
 
 print(f"Сумма чисел = {summa}")
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
